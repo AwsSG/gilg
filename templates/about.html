@@ -10,18 +10,40 @@
 {% for hero in heros %}
 
     <div class="row featureette">
-        <div class="col-md-7">
-            <h3>{{ hero.name }}</h3>
-            <p>
-                {{ hero.desc }}
-            </p>
-        </div>
-        <div class="col-md-5">
-            <img src="{{ hero.img_src }}" alt="" class="featurette-image image-responsive">
-        </div>
+
+        {% if loop.index % 2 != 0 %}
+
+            <div class="col-md-7">
+                <h3>{{ loop.index }}. {{ hero.name }}</h3>
+                <p>
+                    {{ hero.desc }}
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="{{ hero.img_src }}" alt="" class="featurette-image image-responsive">
+            </div>
+
+        {% else %}
+
+            <div class="col-md-5">
+                <img src="{{ hero.img_src }}" alt="" class="featurette-image image-responsive">
+            </div>
+            <div class="col-md-7">
+                <h3>{{ loop.index }}. {{ hero.name }}</h3>
+                <p>
+                    {{ hero.desc }}
+                </p>
+            </div>
+
+        {% endif %}
+
     </div>
 
-    <hr class="featurette-divider">
+    {% if loop.index != loop.length %}
+
+        <hr class="featurette-divider">
+
+    {% endif%}
 
 {% endfor %}
 {% endblock %}
