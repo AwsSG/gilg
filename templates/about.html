@@ -6,46 +6,22 @@
     oldest religious text, after the Pyramid Texts. The literary history of Gilgamesh begins with five Sumerian poems
     about Bilgamesh (Sumerian for "Gilgamesh"), king of Uruk, dating from the Third Dynasty of Ur (c. 2100 BCE).
 </p>
-<div class="row featureette">
-    <div class="col-md-7">
-        <h3>Gilgamish</h3>
-        <p>
-            A the main charecter in the story, he was a major hero in ancient Mesopotamian mythology and the protagonist of the Epic of Gilgamesh, an epic
-            poem written in Akkadian during the late 2nd millennium BC. He was likely a historical king of the Sumerian
-            city-state of Uruk, who was posthumously deified. His rule probably would have taken place sometime in the
-            beginning of the Early Dynastic Period (Mesopotamia) (henceforth ED), though he became a major figure in
-            Sumerian legend during the Third Dynasty of Ur (c. 2112 – c. 2004 BC). <br>
-            Tales of Gilgamesh's legendary exploits are narrated in five surviving Sumerian poems. The earliest of these
-            is likely "Gilgamesh, Enkidu, and the Netherworld", in which Gilgamesh comes to the aid of
-            the goddess Inanna and drives away the creatures infesting her huluppu tree. She gives him two unknown
-            objects, a mikku and a pikku, which he loses. After Enkidu's death, his shade tells Gilgamesh about the
-            bleak conditions in the Underworld. The poem "Gilgamesh and Agga" describes Gilgamesh's revolt against his
-            overlord King Agga. Other Sumerian poems relate Gilgamesh's defeat of the giant Huwawa and the Bull of
-            Heaven, while a fifth, poorly preserved poem relates the account of his death and funeral.
-        </p>
-    </div>
-    <div class="col-md-5">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Hero_lion_Dur-Sharrukin_Louvre_AO19862.jpg/330px-Hero_lion_Dur-Sharrukin_Louvre_AO19862.jpg"
-            alt="">
-    </div>
-</div>
 
-<div class="row featureette">
-    <div class="col-md-5">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Enkidu%2C_Gilgamesh%27s_friend._From_Ur%2C_Iraq%2C_2027-1763_BCE._Iraq_Museum.jpg/330px-Enkidu%2C_Gilgamesh%27s_friend._From_Ur%2C_Iraq%2C_2027-1763_BCE._Iraq_Museum.jpg"
-            alt="">
-    </div>
-    <div class="col-md-7">
-        <h3>Enkido</h3>
-        <p>
-            was a legendary figure in ancient Mesopotamian mythology, wartime comrade and friend of Gilgamesh, king of
-            Uruk. Their exploits were composed in Sumerian poems and in the Akkadian Epic of Gilgamesh, written during
-            the 2nd millennium BC. He is the oldest literary representation of the wild man, a recurrent motif in
-            artistic representations in Mesopotamia and in Ancient Near East literature. The apparition of Enkidu as a
-            primitive man seems to be an innovation of the Old Babylonian version (1300 - 1000 BC), as he was originally
-            a servant-warrior in the Sumerian poems.
-        </p>
-    </div>
-</div>
+{% for hero in heros %}
 
+    <div class="row featureette">
+        <div class="col-md-7">
+            <h3>{{ hero.name }}</h3>
+            <p>
+                {{ hero.desc }}
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img src="{{ hero.img_src }}" alt="" class="featurette-image image-responsive">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+{% endfor %}
 {% endblock %}
