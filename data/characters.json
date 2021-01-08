@@ -2,16 +2,19 @@
     {
         "name": "Gilgamesh",
         "desc": "King of Uruk, the strongest of men, and the personification of all human virtues. A brave warrior, fair judge, and ambitious builder, Gilgamesh surrounds the city of Uruk with magnificent walls and erects its glorious ziggurats, or temple towers. Two-thirds god and one-third mortal, Gilgameshis undone by grief when his beloved companion Enkidu dies",
-        "img_src": "https://www.stmuhistorymedia.org/wp-content/uploads/2017/10/gilgamesh-770x433.jpg"
+        "img_src": "https://www.stmuhistorymedia.org/wp-content/uploads/2017/10/gilgamesh-770x433.jpg",
+        "url": "gil"
     },
     {
         "name": "Enkido",
         "desc": "was a legendary figure in ancient Mesopotamian mythology, wartime comrade and friend of Gilgamesh, king of Uruk. Their exploits were composed in Sumerian poems and in the Akkadian Epic of Gilgamesh, written during the 2nd millennium BC. He is the oldest literary representation of the wild man, a recurrent motif in artistic representations in Mesopotamia and in Ancient Near East.",
-        "img_src": "https://blogs.baruch.cuny.edu/conversations/files/2017/02/1354124904.jpg"
+        "img_src": "https://blogs.baruch.cuny.edu/conversations/files/2017/02/1354124904.jpg",
+        "url": "ido"
     },
     {
         "name": "Utnapishtim",
         "desc": "A king and priest of Shurrupak, whose name translates as “He Who Saw Life.” By the god Ea’s connivance, Utnapishtim survived the great deluge that almost destroyed all life on Earth by building a great boat that carried him, his family, and one of every living creature to safety. The gods granted eternal life to him and his wife.",
-        "img_src": "https://lebanonuntravelled.com/wp/wp-content/uploads/2016/10/Gilgamesh.jpg"
+        "img_src": "https://lebanonuntravelled.com/wp/wp-content/uploads/2016/10/Gilgamesh.jpg",
+        "url": "utnap"
     }
 ]
