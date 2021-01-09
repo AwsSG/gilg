@@ -1,8 +1,12 @@
 import os
 import json
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
+
+if os.path.exists("env.py"):
+    import env
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("MY_SPECIAL_KEY")
 
 
 @app.route("/")
@@ -33,7 +37,8 @@ def about_hero(hero_name):
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        print(request.form)
+        flash("Thanks {}, We will get back to you as soon as possible".format(
+            request.form.get("name")))
     return render_template("contact.html", page_title="Contact")
 
 
