@@ -37,7 +37,7 @@ def about_hero(hero_name):
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        flash("Thanks {}, We will get back to you as soon as possible".format(
+        flash("Thanks {}, we will get back to you as soon as possible".format(
             request.form.get("name")))
     return render_template("contact.html", page_title="Contact")
 
